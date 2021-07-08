@@ -8,13 +8,17 @@
             <th scope="col">Data</th>
             <th scope="col">texto</th>
             <th scope="col">inspetor</th>
+            <th scope="col">excluir</th>
+            <th scope="col">editar</th>
             
           </tr>
         </thead>
         <tbody>
           <tr *ngFor="let r of relatorioList">
             <th scope="row" >{{r.id}}</th>
-            <td>{{r.data | uppercase }}</td>
+            <td>{{r.data }}</td>
             <td>{{r.texto | uppercase}}</td>
             <td>{{r.inspetor | uppercase}}</td>
+            <td> <button type="button" class="btn btn-danger" (click)="excluir(r.id)">Excluir</button></td>
+            <td> <button type="button" class="btn btn-warning" (click)="editar(r.id)">Editar</button></td>
             

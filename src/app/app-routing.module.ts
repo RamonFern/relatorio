@@ -6,7 +6,9 @@ import { NovoRelatorioComponent } from './novo-relatorio/novo-relatorio.componen
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'home', component: HomeComponent},
-  {path: 'novo', component: NovoRelatorioComponent}
+  {path: 'novo', component: NovoRelatorioComponent},
+  {path: 'novo/:id', component: NovoRelatorioComponent}
+  
 ];
 
 @NgModule({
